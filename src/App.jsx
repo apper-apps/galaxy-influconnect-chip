@@ -14,9 +14,9 @@ import Bookings from "@/components/pages/Bookings";
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50">
+<div className="min-h-screen bg-gradient-to-br from-gray-50 via-primary-50/30 to-white">
         <Header />
-        <main className="flex-1">
+        <main className="flex-1 relative">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/browse" element={<Browse />} />
