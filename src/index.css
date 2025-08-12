@@ -127,6 +127,10 @@ img {
 }
 
 /* Selection styles */
+::-moz-selection {
+  background: rgba(84, 33, 102, 0.1);
+  color: #542166;
+}
 ::selection {
   background: rgba(84, 33, 102, 0.1);
   color: #542166;
@@ -157,7 +161,7 @@ img {
 .shimmer {
   background: linear-gradient(90deg, #f1f3f4 0px, #e8eaed 40px, #f1f3f4 80px);
   background-size: 200px;
-animation: shimmer 1.5s ease-in-out infinite;
+  animation: shimmer 1.5s ease-in-out infinite;
 }
 
 /* Hero section background image */
@@ -180,5 +184,4 @@ animation: shimmer 1.5s ease-in-out infinite;
 .backdrop-blur-enhanced {
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
-}
 }
