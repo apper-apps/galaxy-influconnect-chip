@@ -63,8 +63,8 @@ const CategoryGrid = ({ showAll = false }) => {
         </div>
 
         {/* Category Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-          {displayCategories.map((category) => (
+<div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+          {displayCategories.slice(0, 8).map((category) => (
             <Link
               key={category.Id}
               to={`/browse?category=${encodeURIComponent(category.name)}`}

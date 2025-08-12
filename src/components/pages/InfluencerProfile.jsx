@@ -128,7 +128,7 @@ const [influencer, setInfluencer] = useState(null);
                   fallbackText={influencer.displayName}
                 />
                 
-                <div className="flex-1">
+<div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <h1 className="text-2xl font-bold text-gray-900">
                       {influencer.displayName}
@@ -141,37 +141,34 @@ const [influencer, setInfluencer] = useState(null);
                     )}
                   </div>
                   
-{/* Social Media Icons */}
-                  <div className="flex items-center gap-2 mb-3">
-                    {influencer.socialLinks.instagram && (
-                      <div className="flex items-center justify-center w-6 h-6 bg-gradient-to-br from-pink-500 to-purple-600 rounded text-white">
-                        <ApperIcon name="Instagram" size={14} />
-                      </div>
-                    )}
-                    {influencer.socialLinks.facebook && (
-                      <div className="flex items-center justify-center w-6 h-6 bg-blue-600 rounded text-white">
-                        <ApperIcon name="Facebook" size={14} />
-                      </div>
-                    )}
-                    {influencer.socialLinks.youtube && (
-                      <div className="flex items-center justify-center w-6 h-6 bg-red-600 rounded text-white">
-                        <ApperIcon name="Youtube" size={14} />
-                      </div>
-                    )}
-                    {influencer.socialLinks.tiktok && (
-                      <div className="flex items-center justify-center w-6 h-6 bg-black rounded text-white">
-                        <ApperIcon name="Video" size={14} />
-                      </div>
-                    )}
-                    <div className="flex items-center justify-center w-6 h-6 bg-gray-400 rounded text-white">
-                      <ApperIcon name="MoreHorizontal" size={14} />
-                    </div>
-                  </div>
-                  
                   <p className="text-gray-600 flex items-center mb-3">
                     <ApperIcon name="MapPin" className="h-4 w-4 mr-1" />
                     {influencer.location}
                   </p>
+                  
+{/* Social Media Icons */}
+                  <div className="flex items-center gap-3 mb-4">
+                    {influencer.socialLinks.instagram && (
+                      <div className="flex items-center justify-center w-5 h-5 bg-gray-300 rounded text-gray-600 hover:bg-gray-400 transition-colors">
+                        <ApperIcon name="Instagram" size={12} />
+                      </div>
+                    )}
+                    {influencer.socialLinks.youtube && (
+                      <div className="flex items-center justify-center w-5 h-5 bg-gray-300 rounded text-gray-600 hover:bg-gray-400 transition-colors">
+                        <ApperIcon name="Youtube" size={12} />
+                      </div>
+                    )}
+                    {influencer.socialLinks.facebook && (
+                      <div className="flex items-center justify-center w-5 h-5 bg-gray-300 rounded text-gray-600 hover:bg-gray-400 transition-colors">
+                        <ApperIcon name="Facebook" size={12} />
+                      </div>
+                    )}
+                    {influencer.socialLinks.tiktok && (
+                      <div className="flex items-center justify-center w-5 h-5 bg-gray-300 rounded text-gray-600 hover:bg-gray-400 transition-colors">
+                        <ApperIcon name="Video" size={12} />
+                      </div>
+                    )}
+                  </div>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
                     {influencer.category.map(cat => (

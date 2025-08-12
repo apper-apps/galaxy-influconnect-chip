@@ -23,11 +23,11 @@ const HeroSection = () => {
   ];
 
   return (
-<section className="relative overflow-hidden min-h-screen flex items-center">
+<section className="relative overflow-hidden min-h-screen flex items-center shadow-2xl">
       {/* Animated Background Layers */}
       <div className="absolute inset-0">
-        {/* Dynamic Gradient Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-600/90 via-primary-500/80 to-primary-800/90 animate-gradient-shift"></div>
+        {/* Enhanced Dynamic Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#A347FF]/95 via-[#8B35E6]/90 to-[#5B1CE6]/95 animate-gradient-shift"></div>
         
         {/* Geometric Pattern Overlay */}
         <div className="absolute inset-0 opacity-10">
@@ -48,21 +48,21 @@ const HeroSection = () => {
         <div className="absolute bottom-1/3 left-1/2 w-2 h-2 bg-primary-100/50 rounded-full animate-float-6"></div>
       </div>
       
-      {/* Main Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 z-10">
+{/* Main Content */}
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-40 z-10">
         <div className="text-center">
           {/* Main Heading with Enhanced Animation */}
-          <div className="mb-8 animate-slide-up">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
+          <div className="mb-12 animate-slide-up">
+            <h1 className="text-6xl md:text-8xl font-black text-white mb-6 leading-tight tracking-tight">
               Connect with{" "}
               <div className="relative inline-block">
                 <span className="relative z-10 bg-gradient-to-r from-yellow-300 via-pink-300 to-purple-300 bg-clip-text text-transparent animate-pulse-glow">
                   Top Influencers
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-400 blur-lg opacity-30 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-400 blur-lg opacity-40 animate-pulse"></div>
               </div>
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-pink-400 mx-auto rounded-full animate-scale-in"></div>
+            <div className="w-32 h-1.5 bg-gradient-to-r from-yellow-400 to-pink-400 mx-auto rounded-full animate-scale-in shadow-lg"></div>
           </div>
           
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed animate-slide-up animation-delay-200 font-light">
@@ -112,26 +112,26 @@ const HeroSection = () => {
           </div>
 
           {/* Enhanced CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-6 mb-20 animate-slide-up animation-delay-800">
+<div className="flex flex-col sm:flex-row justify-center gap-8 mb-24 animate-slide-up animation-delay-800">
             <Button 
               size="xl" 
               onClick={() => navigate("/browse")}
-              className="relative overflow-hidden bg-white text-primary-700 hover:bg-gray-50 px-10 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="relative overflow-hidden bg-white text-[#A347FF] hover:bg-gray-50 px-12 py-6 text-xl font-bold shadow-2xl hover:shadow-glow transform hover:scale-110 transition-all duration-300 rounded-2xl"
             >
               <span className="relative z-10 flex items-center">
-                <ApperIcon name="Users" className="h-5 w-5 mr-3" />
-                Browse Influencers
+                <ApperIcon name="Users" className="h-6 w-6 mr-4 text-[#A347FF]" />
+                Find Influencers
               </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-50 to-primary-100 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-50 to-primary-100 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
             </Button>
             <Button 
               variant="outline" 
               size="xl" 
               onClick={() => navigate("/how-it-works")}
-              className="border-2 border-white text-white hover:bg-white hover:text-primary-700 px-10 py-4 text-lg font-semibold backdrop-blur-sm shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="border-3 border-white text-white hover:bg-white hover:text-[#A347FF] px-12 py-6 text-xl font-bold backdrop-blur-sm shadow-2xl hover:shadow-glow transform hover:scale-110 transition-all duration-300 rounded-2xl hover:border-white"
             >
-              <ApperIcon name="Play" className="h-5 w-5 mr-3" />
-              How It Works
+              <ApperIcon name="Play" className="h-6 w-6 mr-4" />
+              Become an Influencer
             </Button>
           </div>
 

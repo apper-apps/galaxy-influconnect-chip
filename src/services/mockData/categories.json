@@ -71,12 +71,28 @@
     "influencerCount": 223,
     "popular": true
   },
-  {
+{
     "Id": 10,
     "name": "Entertainment",
     "description": "Comedy, music, movies, and pop culture content",
     "icon": "Music",
     "influencerCount": 178,
     "popular": false
+  },
+  {
+    "Id": 11,
+    "name": "Gaming",
+    "description": "Game reviews, live streams, esports, and gaming tips",
+    "icon": "Gamepad2",
+    "influencerCount": 142,
+    "popular": true
+  },
+  {
+    "Id": 12,
+    "name": "Finance",
+    "description": "Investment tips, money management, and business advice",
+    "icon": "TrendingUp",
+    "influencerCount": 87,
+    "popular": true
   }
 ]
