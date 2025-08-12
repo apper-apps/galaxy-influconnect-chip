@@ -133,12 +133,39 @@ const [influencer, setInfluencer] = useState(null);
                     <h1 className="text-2xl font-bold text-gray-900">
                       {influencer.displayName}
                     </h1>
-                    {influencer.verified && (
-                      <Badge variant="primary">
+{influencer.verified && (
+                      <Badge variant="success">
                         <ApperIcon name="CheckCircle" className="h-3 w-3 mr-1" />
                         Verified
                       </Badge>
                     )}
+                  </div>
+                  
+{/* Social Media Icons */}
+                  <div className="flex items-center gap-2 mb-3">
+                    {influencer.socialLinks.instagram && (
+                      <div className="flex items-center justify-center w-6 h-6 bg-gradient-to-br from-pink-500 to-purple-600 rounded text-white">
+                        <ApperIcon name="Instagram" size={14} />
+                      </div>
+                    )}
+                    {influencer.socialLinks.facebook && (
+                      <div className="flex items-center justify-center w-6 h-6 bg-blue-600 rounded text-white">
+                        <ApperIcon name="Facebook" size={14} />
+                      </div>
+                    )}
+                    {influencer.socialLinks.youtube && (
+                      <div className="flex items-center justify-center w-6 h-6 bg-red-600 rounded text-white">
+                        <ApperIcon name="Youtube" size={14} />
+                      </div>
+                    )}
+                    {influencer.socialLinks.tiktok && (
+                      <div className="flex items-center justify-center w-6 h-6 bg-black rounded text-white">
+                        <ApperIcon name="Video" size={14} />
+                      </div>
+                    )}
+                    <div className="flex items-center justify-center w-6 h-6 bg-gray-400 rounded text-white">
+                      <ApperIcon name="MoreHorizontal" size={14} />
+                    </div>
                   </div>
                   
                   <p className="text-gray-600 flex items-center mb-3">

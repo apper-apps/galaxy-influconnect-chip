@@ -23,9 +23,12 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-primary-100">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+<section className="relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <div className="hero-bg-image"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-600/80 via-primary-500/70 to-primary-400/60"></div>
+      </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div className="text-center">
@@ -104,10 +107,10 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-primary-200 rounded-full opacity-20 animate-bounce-gentle"></div>
-      <div className="absolute top-40 right-20 w-16 h-16 bg-primary-300 rounded-full opacity-30 animate-pulse-slow"></div>
-      <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-primary-400 rounded-full opacity-25 animate-bounce-gentle"></div>
+{/* Floating Elements */}
+      <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full opacity-40 animate-bounce-gentle backdrop-blur-sm"></div>
+      <div className="absolute top-40 right-20 w-16 h-16 bg-white/15 rounded-full opacity-50 animate-pulse-slow backdrop-blur-sm"></div>
+      <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-white/20 rounded-full opacity-35 animate-bounce-gentle backdrop-blur-sm"></div>
     </section>
   );
 };
