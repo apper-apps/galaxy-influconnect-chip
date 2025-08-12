@@ -57,19 +57,19 @@ body {
 }
 
 .Toastify__toast--success {
-  background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
+  background: #27AE60;
 }
 
 .Toastify__toast--error {
-  background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+  background: #E74C3C;
 }
 
 .Toastify__toast--info {
-  background: linear-gradient(135deg, #3498DB 0%, #2980B9 100%);
+  background: #3498DB;
 }
 
 .Toastify__toast--warning {
-  background: linear-gradient(135deg, #F39C12 0%, #E67E22 100%);
+  background: #F39C12;
 }
 
 .Toastify__progress-bar {
@@ -77,19 +77,16 @@ body {
 }
 
 /* Custom utility classes */
-.gradient-text {
-  background: linear-gradient(135deg, #542166 0%, #8c4fb0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.primary-text {
+  color: #542166;
 }
 
-.gradient-bg-primary {
-  background: linear-gradient(135deg, #542166 0%, #734096 100%);
+.bg-primary {
+  background: #542166;
 }
 
-.gradient-bg-light {
-  background: linear-gradient(135deg, #faf7fc 0%, #f4eef8 100%);
+.bg-light {
+  background: #faf7fc;
 }
 
 .shadow-premium {
@@ -176,7 +173,7 @@ img {
 
 /* Success badge variant for verified users */
 .badge-success {
-  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  background: #16a34a;
   color: white;
 }
 
@@ -187,15 +184,14 @@ img {
 }
 
 /* Enhanced animation classes for attractive UI */
-.animate-gradient-shift {
-  background-size: 200% 200%;
-  animation: gradient-shift 8s ease infinite;
+.animate-color-shift {
+  animation: color-shift 8s ease infinite;
 }
 
-@keyframes gradient-shift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes color-shift {
+  0% { background-color: #542166; }
+  50% { background-color: #734096; }
+  100% { background-color: #542166; }
 }
 
 .animate-float-1 { animation: float-1 6s ease-in-out infinite; }

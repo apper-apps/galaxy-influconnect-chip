@@ -31,11 +31,12 @@ const Header = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const navigation = [
-    { name: "Home", href: "/" },
-    { name: "Browse Influencers", href: "/browse" },
-    { name: "Categories", href: "/categories" },
-    { name: "How It Works", href: "/how-it-works" }
+const navigation = [
+    { name: "Find Talent", href: "/browse" },
+    { name: "Find Work", href: "/freelancer-how-it-works" },
+    { name: "Project Catalog", href: "/categories" },
+    { name: "How It Works", href: "/how-it-works" },
+    { name: "Enterprise", href: "/enterprise-get-started" }
   ];
 
   const userMenuItems = [
