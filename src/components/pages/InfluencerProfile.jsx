@@ -399,5 +399,3 @@ function PortfolioItem({ item }) {
 }
 
 export default InfluencerProfile;
-
-export default InfluencerProfile;
