@@ -1,0 +1,432 @@
+[
+  {
+    "Id": 1,
+    "userId": 1,
+    "displayName": "Sarah Wellness",
+    "bio": "Wellness coach and lifestyle influencer helping 100K+ followers live their best life. Specializing in mental health, fitness, and sustainable living.",
+    "category": ["Health & Wellness", "Lifestyle", "Mental Health"],
+    "location": "Los Angeles, CA",
+    "profileImage": "https://images.unsplash.com/photo-1494790108755-2616b612b5bb?w=400",
+    "coverImage": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200",
+    "socialLinks": {
+      "instagram": "@sarahwellness",
+      "tiktok": "@sarahwellness",
+      "youtube": "@sarahwellnesschannel",
+      "website": "https://sarahwellness.com"
+    },
+    "stats": {
+      "instagram": {
+        "followers": 125000,
+        "engagement": 4.2,
+        "avgLikes": 5250,
+        "avgComments": 420
+      },
+      "tiktok": {
+        "followers": 89000,
+        "engagement": 6.8,
+        "avgViews": 15000
+      },
+      "youtube": {
+        "subscribers": 45000,
+        "avgViews": 8500
+      }
+    },
+    "pricing": {
+      "instagram": {
+        "post": 800,
+        "story": 300,
+        "reel": 1200
+      },
+      "tiktok": {
+        "video": 1000
+      },
+      "youtube": {
+        "integration": 2500,
+        "dedicated": 4000
+      }
+    },
+    "portfolio": [
+      {
+        "id": 1,
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600",
+        "platform": "instagram",
+        "caption": "Morning wellness routine that changed my life",
+        "engagement": 8500,
+        "date": "2024-03-01"
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "url": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600",
+        "platform": "tiktok",
+        "caption": "5-minute meditation for busy people",
+        "engagement": 25000,
+        "date": "2024-02-28"
+      }
+    ],
+    "verified": true,
+    "responseTime": "< 2 hours",
+    "rating": 4.9,
+    "completedProjects": 47
+  },
+  {
+    "Id": 2,
+    "userId": 2,
+    "displayName": "Mike TechReviews",
+    "bio": "Tech enthusiast sharing honest reviews and tutorials. 200K+ tech lovers trust my recommendations for gadgets, software, and digital trends.",
+    "category": ["Technology", "Reviews", "Gaming"],
+    "location": "San Francisco, CA",
+    "profileImage": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400",
+    "coverImage": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1200",
+    "socialLinks": {
+      "youtube": "@miketechreviews",
+      "twitter": "@miketech",
+      "instagram": "@miketechreviews",
+      "website": "https://miketechreviews.com"
+    },
+    "stats": {
+      "youtube": {
+        "subscribers": 245000,
+        "avgViews": 35000,
+        "engagement": 5.1
+      },
+      "instagram": {
+        "followers": 89000,
+        "engagement": 3.8,
+        "avgLikes": 3380,
+        "avgComments": 245
+      },
+      "twitter": {
+        "followers": 67000,
+        "engagement": 2.4
+      }
+    },
+    "pricing": {
+      "youtube": {
+        "integration": 3500,
+        "dedicated": 6000,
+        "shorts": 1500
+      },
+      "instagram": {
+        "post": 1200,
+        "story": 450,
+        "reel": 1800
+      },
+      "twitter": {
+        "thread": 800,
+        "single": 300
+      }
+    },
+    "portfolio": [
+      {
+        "id": 3,
+        "type": "video",
+        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600",
+        "platform": "youtube",
+        "caption": "iPhone 15 Pro Max: The Complete Review",
+        "engagement": 45000,
+        "date": "2024-02-25"
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=600",
+        "platform": "instagram",
+        "caption": "Top 5 productivity apps for 2024",
+        "engagement": 5200,
+        "date": "2024-02-20"
+      }
+    ],
+    "verified": true,
+    "responseTime": "< 4 hours",
+    "rating": 4.8,
+    "completedProjects": 89
+  },
+  {
+    "Id": 3,
+    "userId": 3,
+    "displayName": "Emma Style",
+    "bio": "Fashion designer and style influencer inspiring 300K+ fashion lovers worldwide. Sustainable fashion advocate and trend forecaster.",
+    "category": ["Fashion", "Style", "Sustainable Fashion"],
+    "location": "New York, NY",
+    "profileImage": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400",
+    "coverImage": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=1200",
+    "socialLinks": {
+      "instagram": "@emmastyleco",
+      "pinterest": "@emmastyle",
+      "tiktok": "@emmastyleco",
+      "website": "https://emmastyle.co"
+    },
+    "stats": {
+      "instagram": {
+        "followers": 320000,
+        "engagement": 5.7,
+        "avgLikes": 18240,
+        "avgComments": 890
+      },
+      "tiktok": {
+        "followers": 156000,
+        "engagement": 8.2,
+        "avgViews": 25000
+      },
+      "pinterest": {
+        "followers": 89000,
+        "monthlyViews": 450000
+      }
+    },
+    "pricing": {
+      "instagram": {
+        "post": 2200,
+        "story": 800,
+        "reel": 2800
+      },
+      "tiktok": {
+        "video": 2000
+      },
+      "pinterest": {
+        "pin": 500,
+        "board": 1200
+      }
+    },
+    "portfolio": [
+      {
+        "id": 5,
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=600",
+        "platform": "instagram",
+        "caption": "Sustainable spring fashion essentials",
+        "engagement": 22000,
+        "date": "2024-03-05"
+      },
+      {
+        "id": 6,
+        "type": "video",
+        "url": "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600",
+        "platform": "tiktok",
+        "caption": "How to style one dress 5 different ways",
+        "engagement": 38000,
+        "date": "2024-03-02"
+      }
+    ],
+    "verified": true,
+    "responseTime": "< 3 hours",
+    "rating": 4.9,
+    "completedProjects": 124
+  },
+  {
+    "Id": 4,
+    "userId": 4,
+    "displayName": "David Fitness Pro",
+    "bio": "Certified personal trainer and nutrition coach. Helping 180K+ followers achieve their fitness goals with science-based workouts and meal plans.",
+    "category": ["Fitness", "Health", "Nutrition"],
+    "location": "Miami, FL",
+    "profileImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
+    "coverImage": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200",
+    "socialLinks": {
+      "instagram": "@davidfitnesspro",
+      "youtube": "@davidfitnesspro",
+      "tiktok": "@davidfitnesspro"
+    },
+    "stats": {
+      "instagram": {
+        "followers": 185000,
+        "engagement": 6.1,
+        "avgLikes": 11285,
+        "avgComments": 650
+      },
+      "youtube": {
+        "subscribers": 98000,
+        "avgViews": 15000,
+        "engagement": 4.8
+      },
+      "tiktok": {
+        "followers": 134000,
+        "engagement": 7.9,
+        "avgViews": 22000
+      }
+    },
+    "pricing": {
+      "instagram": {
+        "post": 1500,
+        "story": 600,
+        "reel": 2200
+      },
+      "youtube": {
+        "integration": 4000,
+        "dedicated": 7000
+      },
+      "tiktok": {
+        "video": 1800
+      }
+    },
+    "portfolio": [
+      {
+        "id": 7,
+        "type": "video",
+        "url": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600",
+        "platform": "youtube",
+        "caption": "30-day transformation workout plan",
+        "engagement": 28000,
+        "date": "2024-02-15"
+      },
+      {
+        "id": 8,
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=600",
+        "platform": "instagram",
+        "caption": "High protein meal prep for busy professionals",
+        "engagement": 15200,
+        "date": "2024-02-18"
+      }
+    ],
+    "verified": true,
+    "responseTime": "< 6 hours",
+    "rating": 4.7,
+    "completedProjects": 76
+  },
+  {
+    "Id": 5,
+    "userId": 5,
+    "displayName": "Lisa Foodie Adventures",
+    "bio": "Food blogger and recipe developer sharing delicious content with 250K+ food enthusiasts. Specializing in easy recipes and restaurant reviews.",
+    "category": ["Food", "Cooking", "Lifestyle"],
+    "location": "Chicago, IL",
+    "profileImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400",
+    "coverImage": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200",
+    "socialLinks": {
+      "instagram": "@lisafoodieadventures",
+      "tiktok": "@lisafoodieadventures",
+      "youtube": "@lisafoodieadventures",
+      "website": "https://lisafoodieadventures.com"
+    },
+    "stats": {
+      "instagram": {
+        "followers": 256000,
+        "engagement": 5.4,
+        "avgLikes": 13824,
+        "avgComments": 720
+      },
+      "tiktok": {
+        "followers": 198000,
+        "engagement": 9.1,
+        "avgViews": 32000
+      },
+      "youtube": {
+        "subscribers": 67000,
+        "avgViews": 12000,
+        "engagement": 4.2
+      }
+    },
+    "pricing": {
+      "instagram": {
+        "post": 1800,
+        "story": 700,
+        "reel": 2500
+      },
+      "tiktok": {
+        "video": 2200
+      },
+      "youtube": {
+        "integration": 3500,
+        "dedicated": 5500
+      }
+    },
+    "portfolio": [
+      {
+        "id": 9,
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600",
+        "platform": "instagram",
+        "caption": "5-ingredient pasta recipe that went viral",
+        "engagement": 24500,
+        "date": "2024-02-28"
+      },
+      {
+        "id": 10,
+        "type": "video",
+        "url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600",
+        "platform": "tiktok",
+        "caption": "Making the perfect chocolate chip cookies",
+        "engagement": 45000,
+        "date": "2024-03-01"
+      }
+    ],
+    "verified": true,
+    "responseTime": "< 4 hours",
+    "rating": 4.8,
+    "completedProjects": 92
+  },
+  {
+    "Id": 6,
+    "userId": 6,
+    "displayName": "Alex Wanderlust",
+    "bio": "Travel photographer and adventure seeker sharing breathtaking destinations with 400K+ travel enthusiasts. Creating wanderlust one photo at a time.",
+    "category": ["Travel", "Photography", "Adventure"],
+    "location": "Austin, TX",
+    "profileImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400",
+    "coverImage": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200",
+    "socialLinks": {
+      "instagram": "@alexwanderlust",
+      "youtube": "@alexwanderlust",
+      "tiktok": "@alexwanderlust",
+      "website": "https://alexwanderlust.com"
+    },
+    "stats": {
+      "instagram": {
+        "followers": 412000,
+        "engagement": 4.9,
+        "avgLikes": 20188,
+        "avgComments": 980
+      },
+      "youtube": {
+        "subscribers": 156000,
+        "avgViews": 28000,
+        "engagement": 5.2
+      },
+      "tiktok": {
+        "followers": 223000,
+        "engagement": 7.6,
+        "avgViews": 35000
+      }
+    },
+    "pricing": {
+      "instagram": {
+        "post": 3200,
+        "story": 1200,
+        "reel": 4000
+      },
+      "youtube": {
+        "integration": 8000,
+        "dedicated": 12000
+      },
+      "tiktok": {
+        "video": 3500
+      }
+    },
+    "portfolio": [
+      {
+        "id": 11,
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600",
+        "platform": "instagram",
+        "caption": "Sunrise in the Swiss Alps - pure magic",
+        "engagement": 35000,
+        "date": "2024-02-22"
+      },
+      {
+        "id": 12,
+        "type": "video",
+        "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600",
+        "platform": "youtube",
+        "caption": "48 hours in Tokyo - Ultimate Travel Guide",
+        "engagement": 52000,
+        "date": "2024-02-18"
+      }
+    ],
+    "verified": true,
+    "responseTime": "< 12 hours",
+    "rating": 4.9,
+    "completedProjects": 156
+  }
+]

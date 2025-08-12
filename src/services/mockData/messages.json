@@ -1,0 +1,74 @@
+[
+  {
+    "Id": 1,
+    "bookingId": 1,
+    "senderId": 7,
+    "receiverId": 1,
+    "content": "Hi Sarah! I'm excited to work with you on our wellness app campaign. I love your authentic approach to health content.",
+    "timestamp": "2024-03-08T11:00:00Z",
+    "read": true
+  },
+  {
+    "Id": 2,
+    "bookingId": 1,
+    "senderId": 1,
+    "receiverId": 7,
+    "content": "Thank you so much! I'm really excited about this collaboration. Your app sounds like something my audience would genuinely love. When would you like to schedule a call to discuss the content strategy?",
+    "timestamp": "2024-03-08T11:15:00Z",
+    "read": true
+  },
+  {
+    "Id": 3,
+    "bookingId": 1,
+    "senderId": 7,
+    "receiverId": 1,
+    "content": "Perfect! How about tomorrow at 2 PM EST? I can share more details about our target messaging and brand guidelines.",
+    "timestamp": "2024-03-08T11:30:00Z",
+    "read": true
+  },
+  {
+    "Id": 4,
+    "bookingId": 2,
+    "senderId": 8,
+    "receiverId": 2,
+    "content": "Hi Mike! We watched your recent tech reviews and think you'd be perfect for reviewing our productivity software. Are you available for a sponsored video?",
+    "timestamp": "2024-02-15T15:00:00Z",
+    "read": true
+  },
+  {
+    "Id": 5,
+    "bookingId": 2,
+    "senderId": 2,
+    "receiverId": 8,
+    "content": "Hi! Thanks for reaching out. I'd be happy to review your software. I only work with products I genuinely believe in - can you share more details about the features and pricing?",
+    "timestamp": "2024-02-15T15:20:00Z",
+    "read": true
+  },
+  {
+    "Id": 6,
+    "bookingId": 3,
+    "senderId": 7,
+    "receiverId": 3,
+    "content": "Emma, we love your sustainable fashion content! We'd like to collaborate on promoting our new eco-friendly clothing line. Interested?",
+    "timestamp": "2024-02-20T10:30:00Z",
+    "read": true
+  },
+  {
+    "Id": 7,
+    "bookingId": 3,
+    "senderId": 3,
+    "receiverId": 7,
+    "content": "This sounds amazing! Sustainable fashion is exactly what I'm passionate about. I'd love to learn more about your brand values and production process.",
+    "timestamp": "2024-02-20T11:00:00Z",
+    "read": true
+  },
+  {
+    "Id": 8,
+    "bookingId": 4,
+    "senderId": 8,
+    "receiverId": 4,
+    "content": "Hi David! We make premium fitness supplements and think your audience would be interested. Would you be open to trying our products and sharing your honest experience?",
+    "timestamp": "2024-03-10T17:00:00Z",
+    "read": false
+  }
+]

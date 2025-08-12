@@ -1,0 +1,54 @@
+[
+  {
+    "Id": 1,
+    "customerId": 7,
+    "influencerId": 1,
+    "projectDetails": "Instagram post and story series promoting our new wellness app launch. Looking for authentic content that resonates with health-conscious audience.",
+    "budget": 1500,
+    "status": "active",
+    "startDate": "2024-03-15",
+    "endDate": "2024-03-22",
+    "deliverables": ["1 Instagram post", "3 Instagram stories", "Usage rights"],
+    "createdAt": "2024-03-08T10:30:00Z",
+    "messages": 12
+  },
+  {
+    "Id": 2,
+    "customerId": 8,
+    "influencerId": 2,
+    "projectDetails": "YouTube video review of our new productivity software. Need detailed walkthrough and honest review for tech-savvy audience.",
+    "budget": 6000,
+    "status": "completed",
+    "startDate": "2024-02-20",
+    "endDate": "2024-02-27",
+    "deliverables": ["1 dedicated YouTube video", "2 YouTube shorts", "Social media promotion"],
+    "createdAt": "2024-02-15T14:15:00Z",
+    "messages": 8
+  },
+  {
+    "Id": 3,
+    "customerId": 7,
+    "influencerId": 3,
+    "projectDetails": "Fashion campaign for our sustainable clothing line. Looking for creative content showcasing our eco-friendly materials and styles.",
+    "budget": 4200,
+    "status": "in_review",
+    "startDate": "2024-03-01",
+    "endDate": "2024-03-08",
+    "deliverables": ["2 Instagram posts", "1 TikTok video", "Instagram stories", "Usage rights"],
+    "createdAt": "2024-02-20T09:45:00Z",
+    "messages": 15
+  },
+  {
+    "Id": 4,
+    "customerId": 8,
+    "influencerId": 4,
+    "projectDetails": "Fitness supplement promotion campaign. Need authentic workout content incorporating our protein powder naturally into fitness routine.",
+    "budget": 3500,
+    "status": "pending",
+    "startDate": "2024-03-20",
+    "endDate": "2024-03-27",
+    "deliverables": ["1 Instagram reel", "1 YouTube integration", "Product photography"],
+    "createdAt": "2024-03-10T16:20:00Z",
+    "messages": 3
+  }
+]

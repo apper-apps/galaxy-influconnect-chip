@@ -1,0 +1,82 @@
+[
+  {
+    "Id": 1,
+    "name": "Health & Wellness",
+    "description": "Fitness, nutrition, mental health, and lifestyle wellness content",
+    "icon": "Heart",
+    "influencerCount": 245,
+    "popular": true
+  },
+  {
+    "Id": 2,
+    "name": "Technology",
+    "description": "Tech reviews, tutorials, gadgets, and digital trends",
+    "icon": "Smartphone",
+    "influencerCount": 189,
+    "popular": true
+  },
+  {
+    "Id": 3,
+    "name": "Fashion",
+    "description": "Style, trends, fashion hauls, and outfit inspiration",
+    "icon": "Shirt",
+    "influencerCount": 312,
+    "popular": true
+  },
+  {
+    "Id": 4,
+    "name": "Food",
+    "description": "Cooking, recipes, restaurant reviews, and food adventures",
+    "icon": "ChefHat",
+    "influencerCount": 198,
+    "popular": true
+  },
+  {
+    "Id": 5,
+    "name": "Travel",
+    "description": "Travel guides, destinations, and adventure photography",
+    "icon": "MapPin",
+    "influencerCount": 156,
+    "popular": true
+  },
+  {
+    "Id": 6,
+    "name": "Gaming",
+    "description": "Game reviews, streaming, esports, and gaming culture",
+    "icon": "Gamepad2",
+    "influencerCount": 134,
+    "popular": false
+  },
+  {
+    "Id": 7,
+    "name": "Beauty",
+    "description": "Makeup tutorials, skincare routines, and beauty product reviews",
+    "icon": "Sparkles",
+    "influencerCount": 267,
+    "popular": true
+  },
+  {
+    "Id": 8,
+    "name": "Business",
+    "description": "Entrepreneurship, productivity, and business advice",
+    "icon": "Briefcase",
+    "influencerCount": 98,
+    "popular": false
+  },
+  {
+    "Id": 9,
+    "name": "Lifestyle",
+    "description": "Daily life, home decor, family, and personal development",
+    "icon": "Home",
+    "influencerCount": 223,
+    "popular": true
+  },
+  {
+    "Id": 10,
+    "name": "Entertainment",
+    "description": "Comedy, music, movies, and pop culture content",
+    "icon": "Music",
+    "influencerCount": 178,
+    "popular": false
+  }
+]
