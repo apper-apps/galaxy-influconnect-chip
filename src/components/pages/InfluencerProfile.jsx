@@ -1,21 +1,22 @@
-import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import Avatar from "@/components/atoms/Avatar";
-import Badge from "@/components/atoms/Badge";
-import Button from "@/components/atoms/Button";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import ApperIcon from "@/components/ApperIcon";
 import Loading from "@/components/ui/Loading";
 import Error from "@/components/ui/Error";
-import ApperIcon from "@/components/ApperIcon";
+import Button from "@/components/atoms/Button";
+import Badge from "@/components/atoms/Badge";
+import Avatar from "@/components/atoms/Avatar";
 import influencerService from "@/services/api/influencerService";
 
 const InfluencerProfile = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [influencer, setInfluencer] = useState(null);
+const [influencer, setInfluencer] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("overview");
-
+  const [imageLoading, setImageLoading] = useState(true);
+  const [imageError, setImageError] = useState(false);
   const loadInfluencer = async () => {
     setLoading(true);
     setError(null);
@@ -84,12 +85,34 @@ const InfluencerProfile = () => {
       {/* Profile Header */}
       <div className="relative">
         {/* Cover Image */}
-        <div className="h-64 bg-gradient-to-br from-primary-400 to-primary-600">
-          <img
-            src={influencer.coverImage}
-            alt={`${influencer.displayName} cover`}
-            className="w-full h-full object-cover"
-          />
+<div className="h-64 bg-gradient-to-br from-primary-400 to-primary-600 relative overflow-hidden">
+          {imageLoading && !imageError && (
+            <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 animate-pulse" />
+          )}
+          
+          {!imageError && influencer?.coverImage ? (
+            <img
+              src={influencer.coverImage}
+              alt={`${influencer.displayName} cover`}
+              className={`w-full h-full object-cover transition-opacity duration-300 ${
+                imageLoading ? 'opacity-0' : 'opacity-100'
+              }`}
+              onLoad={() => setImageLoading(false)}
+              onError={() => {
+                setImageError(true);
+                setImageLoading(false);
+              }}
+              loading="lazy"
+            />
+          ) : (
+            <div className="w-full h-full bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center">
+              <div className="text-white/80 text-center">
+                <ApperIcon name="User" className="h-16 w-16 mx-auto mb-2 opacity-50" />
+                <p className="text-sm">Cover Image</p>
+              </div>
+            </div>
+          )}
+          
           <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         </div>
 
@@ -246,28 +269,9 @@ const InfluencerProfile = () => {
             {activeTab === "portfolio" && (
               <div className="bg-white rounded-xl shadow-premium p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-6">Portfolio</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {influencer.portfolio.map((item) => (
-                    <div key={item.id} className="border rounded-lg overflow-hidden">
-                      <img
-                        src={item.url}
-                        alt={item.caption}
-                        className="w-full h-48 object-cover"
-                      />
-                      <div className="p-4">
-                        <div className="flex items-center justify-between mb-2">
-                          <Badge variant="secondary" size="sm">
-                            {item.platform}
-                          </Badge>
-                          <span className="text-sm text-gray-500">{item.date}</span>
-                        </div>
-                        <p className="text-sm text-gray-700 mb-2">{item.caption}</p>
-                        <div className="flex items-center text-sm text-gray-600">
-                          <ApperIcon name="Heart" className="h-4 w-4 mr-1" />
-                          {item.engagement.toLocaleString()} engagements
-                        </div>
-                      </div>
-                    </div>
+                    <PortfolioItem key={item.id} item={item} />
                   ))}
                 </div>
               </div>
@@ -340,5 +344,60 @@ const InfluencerProfile = () => {
     </div>
   );
 };
+
+// Portfolio Item Component with image error handling
+function PortfolioItem({ item }) {
+  const [imgLoading, setImgLoading] = useState(true);
+  const [imgError, setImgError] = useState(false);
+
+  return (
+    <div className="border rounded-lg overflow-hidden">
+      <div className="relative h-48 bg-gray-100">
+        {imgLoading && !imgError && (
+          <div className="absolute inset-0 bg-gray-200 animate-pulse" />
+        )}
+        
+        {!imgError && item?.url ? (
+          <img
+            src={item.url}
+            alt={item.caption || 'Portfolio item'}
+            className={`w-full h-full object-cover transition-opacity duration-300 ${
+              imgLoading ? 'opacity-0' : 'opacity-100'
+            }`}
+            onLoad={() => setImgLoading(false)}
+            onError={() => {
+              setImgError(true);
+              setImgLoading(false);
+            }}
+            loading="lazy"
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+            <div className="text-gray-400 text-center">
+              <ApperIcon name="Image" className="h-8 w-8 mx-auto mb-1" />
+              <p className="text-xs">No Image</p>
+            </div>
+          </div>
+        )}
+      </div>
+      
+      <div className="p-4">
+        <div className="flex items-center justify-between mb-2">
+          <Badge variant="secondary" size="sm">
+            {item?.platform || 'Unknown'}
+          </Badge>
+          <span className="text-sm text-gray-500">{item?.date || 'No date'}</span>
+        </div>
+        <p className="text-sm text-gray-700 mb-2">{item?.caption || 'No caption'}</p>
+        <div className="flex items-center text-sm text-gray-600">
+          <ApperIcon name="Heart" className="h-4 w-4 mr-1" />
+          {item?.engagement?.toLocaleString() || '0'} engagements
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default InfluencerProfile;
 
 export default InfluencerProfile;

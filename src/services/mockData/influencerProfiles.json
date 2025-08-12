@@ -77,8 +77,8 @@
     "bio": "Tech enthusiast sharing honest reviews and tutorials. 200K+ tech lovers trust my recommendations for gadgets, software, and digital trends.",
     "category": ["Technology", "Reviews", "Gaming"],
     "location": "San Francisco, CA",
-    "profileImage": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400",
-    "coverImage": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1200",
+"profileImage": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    "coverImage": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&h=400&fit=crop",
     "socialLinks": {
       "youtube": "@miketechreviews",
       "twitter": "@miketech",
@@ -121,8 +121,8 @@
     "portfolio": [
       {
         "id": 3,
-        "type": "video",
-        "url": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600",
+"type": "video",
+        "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop",
         "platform": "youtube",
         "caption": "iPhone 15 Pro Max: The Complete Review",
         "engagement": 45000,
